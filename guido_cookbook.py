@@ -20,5 +20,3 @@ def preparation_time_in_minutes(number_of_layers):
 def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     elapsed_time = preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
     return elapsed_time
-
-print(f"You have spent {elapsed_time_in_minutes(1, 3)} minutes making your lasagna!")
