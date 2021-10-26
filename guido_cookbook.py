@@ -1,4 +1,5 @@
 EXPECTED_BAKE_TIME = 40
+PREPARATION_TIME = 2
 
 
 def bake_time_remaining(elapsed_bake_time):
@@ -8,18 +9,13 @@ def bake_time_remaining(elapsed_bake_time):
     else:
         time_left = EXPECTED_BAKE_TIME - elapsed_bake_time
         return time_left
-       # print(f"The lasagna should be left in the oven for {time_left} more minutes!")
-
-
-
-# bake_time_remaining(27)
+       
 
 
 def preparation_time_in_minutes(number_of_layers):
-    val = number_of_layers * 2
+    val = number_of_layers * PREPARATION_TIME
     return val
 
-# preparation_time_in_minutes(4)
 
 def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     elapsed_time = preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
